@@ -1,4 +1,4 @@
 import qrcode
-primeiro_qrcode = qrcode.make("https://www.google.com.br")
-type(primeiro_qrcode)
+pqrcode = qrcode.make("https://www.google.com.br")
+type(pqrcode)
 img.save("primeiro_qrcode.jpg")
