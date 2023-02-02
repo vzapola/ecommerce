@@ -1,10 +1,11 @@
-# aqui serão anotados os pedidos
+# aqui serão anotados os produtos
 
-pedido = input('Registre aqui o seu pedido. Registre quantos produtos quiser e, para finalizar o pedido, basta apertar enter com a caixa vazia:')
-pedidos = []
+vendas = []
 
-while pedido != '':
-    pedidos.append(pedido)
-    pedido = input('Registre aqui o seu pedido. Registre quantos produtos quiser e, para finalizar o pedido, basta apertar enter com a caixa vazia:')
-        
-print(f'Resumo do pedido: Os itens foram {pedidos}')
+while True:
+    produto = input('Registre aqui seu produto: ')
+    if not produto:
+        break
+    qtde = int(input(f'Registre aqui a quantidade do produto {produto}: '))
+    vendas.append([produto, qtde])
+print(vendas)
